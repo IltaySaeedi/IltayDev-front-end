@@ -1,0 +1,93 @@
+aside {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+form#lang-form > label[for="lang"] {
+    display: inline-block;
+    position: relative;
+    padding: 0.75rem 0;
+    width: 100%;
+}
+
+form#lang-form > select#lang {
+    position: relative;
+    background-color: white;
+    background-color: var(--input-color);
+    color: black;
+    height: 3.2rem;
+    border-bottom: none;
+    font-size: 1.34rem;
+    margin: 1.2rem;
+}
+
+form#lang-form > select#lang > option {
+    background-color: white;
+    background-color: var(--input-color);
+    color: black;
+    font-size: 1.34rem;
+}
+
+@media screen and (min-width: 537px) and (max-width: 697px) {
+    aside > form {
+        margin: 1rem 0rem;
+        min-width: 22rem;
+        flex: 1 24rem;
+        box-sizing: border-box;
+    }
+    form#search-form > button.submit-button {
+        width: 19rem;
+    }
+    form#lang-form {
+        text-align: center;
+    }
+    form#lang-form > button.submit-button {
+        margin: 0.75rem 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 848px) {
+    form#search-form > button.submit-button {
+        width: 19rem;
+    }
+    form#lang-form {
+        text-align: center;
+    }
+    form#lang-form > button.submit-button {
+        margin: 0.75rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    aside {
+        justify-content: center;
+        align-items: stretch;
+    }
+    aside > from.form {
+        flex: 0;
+    }
+    aside > form {
+        margin: 1rem 0.75rem;
+    }
+}
+
+@media (max-width: 320px) {
+    #search-form > button.submit-button {
+        width: 19rem;
+    }
+    form#lang-form {
+        text-align: center;
+    }
+    form#lang-form > button.submit-button {
+        margin: 0.75rem 0;
+    }
+}
+
+@media (max-width: 260px) {
+    aside {
+        padding: 0;
+    }
+}
+

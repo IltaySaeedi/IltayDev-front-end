@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>IltayDev</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" href="./img/logo.svg" />
+		<link rel="stylesheet" href="./styles/style.css" />
+		<link rel="stylesheet" href="./styles/post.css" />
+		<link rel="stylesheet" href="./styles/aside.css" />
+		<link rel="stylesheet" href="./styles/header.css" />
+		<link rel="stylesheet" href="./styles/header-rtl.css" />
+		<link rel="stylesheet" href="./styles/main.css" />
+		<link rel="stylesheet" href="./styles/footer.css" />
+	</head>
+	<body>
+        <header>
+            <a id="logo" alt="Logo" href="./index.html">
+                <svg
+                    width="260"
+                    height="155"
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    title="IltayDev logo"
+                    viewBox="0 0 261 155">
+                    <path
+                        tabindex="-1"
+                        stroke="#000000"
+                        stroke-width="5"
+                        fill="none"
+                        d="M 5 50 L 55 150 L 255 50 M 32 104 V 5 M 5 5 H 255 M 55 150 C 55 150, 122 -122, 196 79 M 82 70 L 170 26">
+                    </path>
+                </svg>
+            </a>
+            <button id="primary-nav-btn">
+                    <svg viewBox="0 0 32 32">
+                        <rect x="2" y="04" width="28" height="4"></rect>
+                        <rect x="2" y="14" width="28" height="4"></rect>
+                        <rect x="2" y="24" width="28" height="4"></rect>
+                        <path 
+                            tabindex="-1" 
+                            d="M 18 22 L 20 20 L 24 24 L 28 20 L 30 22 L 26 26 L 30 30 L 28 32 L 24 28 L 20 32 L 18 30 L 22 26 L 18 22" 
+                            fill="black"
+                            stroke="black"
+                            stroke-width="1">
+                        </path>
+                    </svg>
+            </button>
+            <nav id="primary-nav">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#posts.html">Posts</a></li>
+                    <li><a href="#about.html">About</a></li>
+                    <li><a href="#contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <a href="#login" id="login-menu">
+                <svg viewBox="0 0 32 32">
+                    <circle cx="16" cy="10" r="8" stroke="#000000" stroke-width="2" fill="transparent"></circle>
+                    <path d="M 2 32 C 1 16, 32 16, 31 32" stroke="#000000" stroke-width="2" fill="transparent"></path>
+                </svg>
+            </a>
+        </header>
+        <aside>
+            <form class="form" id="search-form" role="search">
+                <label for="search-input">Search in website: </label><br />
+                <input class="form-input" id="search-input" aria-placeholder="Type here..." placeholder="Type here..." type="search" required />
+                <button class="submit-button" type="submit">Search</button>
+            </form>
+            <form class="form" id="lang-form">
+                <label for="lang">Change your language</label>
+                <select aria-label="Language" id="lang" name="lang">
+                    <option value="en" selected="true">GB | English</option>
+                    <option value="fa">IR | فارسی </option>
+                </select>
+                <button id="lang-submit" class="submit-button" type="submit">
+                    Change language
+                </button>
+            </form>
+        </aside>
+        <main>
+            <!-- (p>lorem10)+(p>lorem30)+(p>lorem50) -->
+            <h1 id="Welcome">Welcome</h1>
+            <p>Lorem ipsum, dolor <a class="external" href="https://example.com">exmaple</a> sit amet consectetur adipisicing elit. Eaque, alias! Esse, unde consectetur adipisci in dolorem eos suscipit quam ipsam velit, voluptate aperiam itaque tenetur iste eum, veniam mollitia. Aliquid?</p>
+            <p>Lorem ipsum dolor <a href="#Welcome">welcome</a> sit amet consectetur adipisicing elit. Quidem, culpa excepturi quaerat repellendus error dolor, qui aliquid consectetur consequatur assumenda ex iusto totam reprehenderit! Saepe earum nemo repudiandae, sed perferendis perspiciatis non explicabo cum? Nulla accusamus sapiente beatae in sed eos non nostrum. Possimus culpa iure optio magnam, sapiente dolore?</p>
+        </main>
+        <nav>
+            <ol>
+                <li><a href="#abcd">abcd</a></li>
+                <li><a href="#efg">efg</a></li>
+                <li><a href="#hijk">hijk</a></li>
+                <li><a href="#lmnop">lmnop</a></li>
+                <li><a href="#qrs">qrs</a></li>
+                <li><a href="#tuv">tuv</a></li>
+                <li><a href="#wxyz">wxyz</a></li>
+            </ol>
+        </nav>
+        <footer>
+            Example Link: <a class="external" href="https://example.com">Exmaple</a><br />
+            Home: <a href="./index.html">Home</a>
+        </footer>
+        <script src="./scripts/script-ie.js"></script>
+        <!-- <script src="./scripts/script.js"></script> -->
+        <script>
+            // https://websemantics.uk/articles/removing-svg-keyboard-focus-in-internet-explorer/
+            // Remove SVG focus in IE v1.0 17/08/2016
+            // 275 bytes gzipped (384 bytes uncompressed)
+            (function(e,c){function f(){for(var a=c.getElementsByTagName("svg"),b=a.length;b--;)a[b].setAttribute("focusable",!1)}(function(){var a=-1,b=e.navigator.userAgent,d=b.indexOf("MSIE "),c=b.indexOf("Trident/");0<d?a=parseInt(b.substring(d+5,b.indexOf(".",d)),10):0<c&&(a=b.indexOf("rv:"),a=parseInt(b.substring(a+3,b.indexOf(".",a)),10));return-1<a?a:void 0})()&&f()})(window,document);
+        </script>
+	</body>
+</html>

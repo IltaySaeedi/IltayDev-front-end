@@ -1,0 +1,35 @@
+header.rtl > a#logo {
+    float: right;
+}
+
+header.rtl > a#login-menu {
+    float: left;
+}
+
+header.rtl > select#lang, header.rtl > label[for="lang"] {
+    float: left;
+}
+
+header.rtl, nav#primary-nav.rtl{
+    direction: rtl;
+}
+
+header.rtl > nav#primary-nav {
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    header.rtl > a#logo {
+        float: none;
+        /* right: calc(50% - 3% - 3.2rem - 3.2rem - 2%); */
+    }
+    header.rtl > button#primary-nav-btn {
+        float: right;
+    }
+    header.rtl > button#primary-nav-btn + nav {
+        right: -100%;
+    }
+    header.rtl > button#primary-nav-btn.show-navbar + nav {
+        right: 0%;
+    }
+}

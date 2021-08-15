@@ -1,0 +1,15 @@
+<svg
+    width="260"
+    height="155"
+    xmlns="http://www.w3.org/2000/svg"
+    role="img"
+    style="background-color:#ffffcc"
+    title="IltayDev logo"
+    viewBox="0 0 261 155">
+    <path
+        stroke="black"
+        stroke-width="7"
+        fill="none"
+        d="M 5 50 L 55 150 L 255 50 M 32 104 V 5 M 5 5 H 255 M 55 150 C 55 150, 122 -122, 196 79 M 82 70 L 170 26">
+    </path>
+</svg>

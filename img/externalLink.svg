@@ -1,0 +1,29 @@
+<svg
+    width="100"
+    height="100"
+    fill="black"
+    stroke="black"
+    stroke-width="8"
+    xmlns="http://www.w3.org/2000/svg"
+    role="icon"
+    title="External link"
+    viewBox= "10 10 95 95">
+    <path style="stroke-linecap: round;stroke-linejoin: round;" fill="transparent" d="M75 50 V75 H25 V25 H50"></path>
+    <line style="stroke-linecap: round;" x1="55" y1="45" x2="75" y2="25"></line>
+    <polygon stroke-width="1" points="60,20 80,20 80,40"></polygon>
+</svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

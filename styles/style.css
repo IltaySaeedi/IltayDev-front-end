@@ -1,0 +1,152 @@
+:root {
+    --primary-background-color: #ffffcc;
+    --secondary-background-color: #cccc99;
+    --tenary-background-color: #cccc66;
+    --outline-color: #0000ff;
+    --link-outline-color: #0000ff;
+    --link-color: #0000ff;
+    --link-active-bgcolor: #666633;
+    --link-active-color: white;
+    --submit-button-color: #66cc66;
+    --submit-button-color-shadow: #669933;
+    --submit-button-color-active: #99cc99;
+    --input-color: white;
+    color: black;
+}
+
+@-ms-viewport{
+    width: device-width;
+}
+
+html {
+    background-color: #ffffcc;
+    background-color: var(--primary-background-color);
+    min-height: 100vh;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body  {
+    background-color: #ffffcc;
+    background-color: var(--primary-background-color);
+    font-family: Verdana, sans-serif;
+    min-width: 24rem;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: inherit;
+    font-size: 2rem;
+}
+
+body.rtl {
+    direction: rtl;
+}
+
+a.external::after {
+    display: inline-block;
+    background: transparent url("../img/externalLink.svg");
+    background-size: 2rem;
+    content: '';
+    width: 1.6rem;
+    height: 1.6rem;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    box-sizing: border-box;
+}
+
+select:focus, input:focus, button:focus {
+    outline: solid 0.2rem #0000ff;
+    outline: solid 0.2rem var(--outline-color);
+}
+
+select:hover, input:hover, button:hover {
+    outline: solid 0.2rem #0000ff;
+    outline: solid 0.2rem var(--outline-color);
+}
+
+a {
+    color: #0000ff;
+    color: var(--link-color);
+}
+
+a:focus {
+    outline: dashed 0.2rem #0000ff;
+    outline: dashed 0.2rem var(--link-outline-color);
+    text-decoration: none;
+}
+
+a:hover {
+    outline: dashed 0.2rem #0000ff;
+    outline: dashed 0.2rem var(--link-outline-color);
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+    color: var(--link-active-color);
+    outline: none;
+    background-color: #666633;
+    background-color: var(--link-active-bgcolor);
+}
+
+
+.form {
+    display: inline-table;
+    box-sizing: border-box;
+    margin: 1rem;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    min-width: 22rem;
+    max-width: 30rem;
+    padding: 0.5rem;
+    background-color: #cccc99;
+    background-color: var(--secondary-background-color);
+    border-radius: 1rem;
+}
+
+.submit-button {
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer ;
+    background-color: #66cc66;
+    background-color: var(--submit-button-color);
+    padding: 1rem;
+    color: black;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1.34rem;
+}
+
+/* .submit-button:hover {
+    box-shadow: 0.2rem 0.2rem 0.2rem #669933;
+    box-shadow: 0.2rem 0.2rem 0.2rem var(--submit-button-color-shadow);
+} */
+
+.submit-button:active {
+/*     box-shadow: 0.1rem 0 0.2rem #669933;
+    box-shadow: 0.1rem 0 0.2rem var(--submit-button-color-shadow); */
+    background-color: #99cc99;
+    background-color: var(--submit-button-color-active);
+}
+
+.form label {
+    font-size: 1.5rem;
+}
+
+.form-input {
+    display: inline-block;
+    border-radius: 0.5rem;
+    background-color: white;
+    background-color: var(--input-color);
+    margin: 0.75rem;
+    color: black;
+    width: 19rem;
+    padding: 1rem;
+    font-size: 1.4rem;
+    border: none;
+}

@@ -1,0 +1,12 @@
+footer {
+    background-color: #cccc99;
+    background-color: var(--secondary-background-color);
+    bottom: 0;
+    height: auto;
+    color: black;
+    padding: 5%;
+}
+
+footer a {
+    text-decoration: none;
+}
