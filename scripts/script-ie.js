@@ -62,7 +62,7 @@ function hardCoding(langName) {
         searchButton.innerText = "Search";
         langLabel.innerText = "Change your language";
         langSubmit.innerText = "Change language";
-        main.firstElementChild.innerText = "ٌWelcome";
+        main.firstElementChild.innerText = "Welcome";
         main.children[1].innerText = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus cupiditate fugit veritatis iusto, nostrum obcaecati vero autem harum optio veniam dolorem. Nemo error doloribus possimus deserunt non dolores, iste aspernatur!";
         main.children[2].innerText = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae corporis veniam soluta, reiciendis, enim nisi ratione impedit tempora repellat architecto nostrum nihil reprehenderit aperiam quis tenetur quaerat sed dolore magni deleniti sint animi! Est deserunt magni sit fuga, reprehenderit consequatur qui quis iste? Possimus saepe doloremque beatae consequatur officia voluptatem?";
     }
