@@ -9,6 +9,7 @@
     --link-active-color: white;
     --submit-button-color: #66cc66;
     --submit-button-color-shadow: #669933;
+    --submit-button-color-hover: #33cc33;
     --submit-button-color-active: #99cc99;
     --input-color: white;
     color: black;
@@ -122,17 +123,15 @@ a:active {
     font-size: 1.34rem;
 }
 
-/* .submit-button:hover {
-    box-shadow: 0.2rem 0.2rem 0.2rem #669933;
-    box-shadow: 0.2rem 0.2rem 0.2rem var(--submit-button-color-shadow);
-} */
-
+.submit-button:hover {
+    background-color: #33cc33;
+    background-color: var(--submit-button-color-hover);
+}
 .submit-button:active {
-/*     box-shadow: 0.1rem 0 0.2rem #669933;
-    box-shadow: 0.1rem 0 0.2rem var(--submit-button-color-shadow); */
     background-color: #99cc99;
     background-color: var(--submit-button-color-active);
 }
+
 
 .form label {
     font-size: 1.5rem;
