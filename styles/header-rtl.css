@@ -26,10 +26,4 @@ header.rtl > nav#primary-nav {
     header.rtl > button#primary-nav-btn {
         float: right;
     }
-    header.rtl > button#primary-nav-btn + nav {
-        right: -100%;
-    }
-    header.rtl > button#primary-nav-btn.show-navbar + nav {
-        right: 0%;
-    }
 }

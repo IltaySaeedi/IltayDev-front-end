@@ -67,7 +67,6 @@ header.rtl, header > nav#primary-nav.rtl {
 
 header > nav#primary-nav {
     background-color: inherit;
-    z-index: 1;
     display: inline-block;
     width: 75%;
     /* 3.2rem + 1rem + 13.2rem + 1.2rem + 11.5rem */
@@ -173,27 +172,23 @@ header > button#primary-nav-btn {
         transition: 0.0s 0.075s all;
     }
     header > button#primary-nav-btn + nav {
-        right: 100%;
+        display: none;
     }
     header > button#primary-nav-btn.show-navbar + nav {
-        right: 0%;
+        display: block;
     }
     header > nav#primary-nav {
         background-color: #cccc99;
         background-color: var(--secondary-background-color);
-        top: 8.2rem; /* calc(8.5rem + 1.5rem - 3rem); */
+        top: 8.2rem;
         box-sizing: border-box;
         width: 100%;
+        right: 0;
         margin: 0;
-        display: block;
         min-width: 24rem;
-        z-index: 2;
         position: absolute;
         height: auto;
         border: 0.2rem solid black;
-/*         transition-property: right;
-        transition-duration: 440ms;
-        transition-timing-function: ease-out; */
     }
     header > nav#primary-nav > ul {
         list-style-type: none;
